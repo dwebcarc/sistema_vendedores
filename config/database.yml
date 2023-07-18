@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: usuario_dev
+  database: usuario_dev2
   
 test:
   <<: *default
-  database: usuario_test
+  database: usuario_test2
 
 production:
   <<: *default
-  database: vendedores_production
+  database: vendedores_production2
   username: vendedores
   password: <%= ENV["VENDEDORES_DATABASE_PASSWORD"] %>
